@@ -100,11 +100,9 @@ do {
     num = Number(prompt("Enter number from 100 to 999"));
 } while (num < 100 || num >= 1000)
 
-let stringNumber = String(num);
-
-let firstNum = Number(stringNumber.substring(0, 1));
-let secondNum = Number(stringNumber.substring(1, 2));
-let thirdNum = Number(stringNumber.substring(2, 3));
+let firstNum = (num - (num%100)) / 100;
+let secondNum = ((num - firstNum * 100) - (num - firstNum * 100) % 10) / 10;
+let thirdNum = num - firstNum * 100 - secondNum * 10;
 
 let sum = firstNum + secondNum + thirdNum;
 alert(sum);
