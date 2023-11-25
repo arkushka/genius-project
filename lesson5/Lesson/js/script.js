@@ -180,8 +180,9 @@
 // showUserInfo.logInfo.apply(Vano, ["developer", "Lviv"]);
 
 ///////////////////////////////////
-///////////////////////////////////
+/////////////////////////////////// Practics
 
+// 1
 // const message = function (name, stars) {
 //   console.log(`${name}, Welcome to ${this.hotel}, stars ${stars}`);
 // };
@@ -200,9 +201,10 @@
 
 ////////
 
+//2
 // const cart = {
 //   showItems() {
-//     console.log("В корзині: ", this.items);
+//     console.log("In cart: ", this.items);
 //   },
 // };
 
@@ -218,17 +220,13 @@
 //   items: ["майка, шорти"],
 // };
 
-// document
-//   .querySelector("#wom")
-//   .addEventListener("click", cart.showItems.bind(woman));
+// cart.showItems.bind(man)();
 
-// document
-//   .querySelector("#man")
-//   .addEventListener("click", cart.showItems.bind(man));
+// document.querySelector("#wom").addEventListener("click", cart.showItems.bind(woman));
 
-// document
-//   .querySelector("#kid")
-//   .addEventListener("click", cart.showItems.bind(child));
+// document.querySelector("#man").addEventListener("click", cart.showItems.bind(man));
+
+// document.querySelector("#kid").addEventListener("click", cart.showItems.bind(child));
 // ////
 
 // const infoCar = {
