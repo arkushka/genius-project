@@ -25,24 +25,24 @@
 
 //класи
 
-// class Bank {
-//   static type = "Privat";
-//   constructor(options) {
-//     this.summ = options.summ;
-//     this.month = options.month;
-//     this.p = options.p;
-//   }
+class Bank {
+  static type = "Privat";
+  constructor(options) {
+    this.summ = options.summ;
+    this.month = options.month;
+    this.p = options.p;
+  }
 
-//   credit() {
-//     return console.log("I am Privat");
-//   }
-// }
+  credit() {
+    return console.log("I am Privat");
+  }
+}
 
-// const userBank = new Bank({
-//   summ: 30000,
-//   month: 5,
-//   p: 500,
-// });
+const userBank = new Bank({
+  summ: 30000,
+  month: 5,
+  p: 500,
+});
 
 // userBank.credit();
 // console.log(Bank.type);
@@ -98,9 +98,10 @@
 
 // console.log(Dasha);
 
+//----------------------- prototype
 // const a = [1, 2, 3];
 // console.log(a);
-
+//________________________________________
 // const a = {
 //   x: 1,
 //   y: 2,
@@ -110,19 +111,34 @@
 
 // console.log(b);
 
+//--------------------------------------
 // const Manager = function (name, sales) {
 //   this.name = name;
 //   this.sales = sales;
+
+//   this.sale = function () {
+//         this.sales += 1;
+//  }
 // };
 
 // const ann = new Manager("Anna", 5);
 // const ivan = new Manager("Ivan", 10);
 
+// console.log(ann.sales);
+// ann.sale();
+// console.log(ann.sales);
+
 // Manager.prototype.sale = function () {
 //   this.sales += 1;
 // };
 
+// console.log(ann.sales);
+// ann.sale();
+// console.log(ann.sales);
+
 // console.dir(Manager);
+
+//-----------------------------------------
 
 // class CoffeMachine {
 //   _water = 0;
